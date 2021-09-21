@@ -45,8 +45,14 @@
   font-weight: 600;
 }
 
-.project-btn {
+.project-btns {
+  display: flex;
   width: 80%;
+  justify-content: space-between;
+}
+
+.project-btn {
+  width: 45%;
   height: 40px;
   background: #f06000;
   border: none;

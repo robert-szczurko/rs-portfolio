@@ -21,6 +21,7 @@ function Projects() {
           skills={["React JS", "External API", "Axios", "Video Player"]}
           heading="Netflix Clone"
           url="https://netflix-clone-aeb93.web.app"
+          codeurl="https://github.com/robert-szczurko/netflixclone"
           description="Netflix clone is a recreation of the Netflix web application. The project is built using an external API providing live updates of current popular Netflix shows. Trailers can also be displayed by clicking on a title "
         />
         <Project
@@ -34,6 +35,7 @@ function Projects() {
           alt="Networth Calculator Beta"
           heading="Networth Calculator Beta"
           url="https://networth-calculator-3cb78.web.app"
+          codeurl="https://github.com/robert-szczurko/networth-calculator"
           description="Networth Calculator helps users manage their Income, Investments and Debts. The app uses algorithms to predict when they will reach their financial goals. Currently a Beta version, the plan is to implement external API's to retrieve the users current financial data to reduce the need for manual inputs"
         />
       </div>
@@ -49,6 +51,7 @@ function Projects() {
           alt="Slack Clone"
           heading="Slack Clone"
           url="https://slack-clone-1d566.web.app/"
+          codeurl="https://github.com/robert-szczurko/slack-clone"
           description="Slack Clone is a live chatting app that allows multiple users to chat in real time. Includes functionality to add new chat rooms "
         />
         <Project
@@ -62,6 +65,7 @@ function Projects() {
           alt="Table Tennis"
           heading="Table Tennis Tracker"
           url="https://table-tennis-a716e.web.app/"
+          codeurl="https://github.com/robert-szczurko/table-tennis"
           description="A fun personal project made to track table tennis games between my housemates and I. The app is designed for mobile only and includes match history as well as player stats"
         />
       </div>

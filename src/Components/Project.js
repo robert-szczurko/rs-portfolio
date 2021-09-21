@@ -7,6 +7,10 @@ function Project(props) {
     window.open(props.url, "_blank");
   };
 
+  const codeLink = () => {
+    window.open(props.codeurl, "_blank");
+  };
+
   return (
     <div className="card">
       <img className="project-image" src={props.image} alt={props.alt} />
@@ -20,9 +24,14 @@ function Project(props) {
         ))}
       </div>
       <div className="project-description">{props.description}</div>
-      <button className="project-btn" onClick={link}>
-        SEE LIVE
-      </button>
+      <div className="project-btns">
+        <button className="project-btn" onClick={link}>
+          SEE LIVE
+        </button>
+        <button className="project-btn" onClick={codeLink}>
+          VIEW CODE
+        </button>
+      </div>
     </div>
   );
 }
