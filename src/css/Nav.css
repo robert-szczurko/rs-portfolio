@@ -1,0 +1,84 @@
+.navbar {
+  background-color: transparent;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+
+  transition: all 200ms;
+}
+.navbar-container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.nav-logo {
+  height: 50px;
+  width: 80px;
+  background-image: url(../RSlogo.png);
+  background-size: cover;
+  transition: all 0.2s;
+}
+.nav-active > .nav-logo {
+  background-image: url(../RSlogo-active.png);
+}
+
+.nav-logo:hover {
+  background-image: url(../RSlogo-hover.png);
+}
+
+.navbar-links {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar-scrolled {
+  background-color: #161415;
+}
+
+.nav-item {
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.nav-item:hover {
+  color: #aa4705;
+}
+
+.nav-active {
+  color: #f06000;
+}
+
+.hamburger {
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar-links {
+    display: none;
+  }
+  .navbar {
+    background: #161415;
+  }
+  .navbar-container {
+    width: 100%;
+    padding: 0 60px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .hamburger {
+    display: none;
+  }
+}

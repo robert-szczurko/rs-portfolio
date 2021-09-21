@@ -1,0 +1,72 @@
+.card {
+  width: 40%;
+  min-width: 320px;
+  max-width: 500px;
+  height: 600px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.project-image {
+  width: 80%;
+}
+
+.project-description {
+  margin: 0px 30px;
+}
+
+.project-skills {
+  display: flex;
+  width: 70%;
+  flex-wrap: wrap;
+}
+.project-skill {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  margin-top: 5px;
+}
+
+.project-skills .MuiSvgIcon-root {
+  color: green;
+  margin-right: 10px;
+  line-height: auto;
+  height: auto;
+}
+
+.project-skills p {
+  font-weight: 600;
+}
+
+.project-btn {
+  width: 80%;
+  height: 40px;
+  background: #f06000;
+  border: none;
+  color: white;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.project-btn:hover {
+  background: #aa4705;
+}
+
+@media screen and (max-width: 876px) {
+  .card {
+    height: 550px;
+  }
+  .project-description {
+    font-size: 15px;
+  }
+  .project-skills p {
+    font-size: 15px;
+  }
+}
