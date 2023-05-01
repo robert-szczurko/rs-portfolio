@@ -1,10 +1,10 @@
 import React from "react";
 import Project from "./Project";
 import "../css/Projects.css";
-import netflixImg from "../netflix-project-min.png";
-import tableTennisImg from "../table-tennis-project.png";
-import networthImg from "../networth-project.png";
-import slackImg from "../slack-project.png";
+import netflixImg from "../assets/netflix-project-min.png";
+import tableTennisImg from "../assets/table-tennis-project.png";
+import networthImg from "../assets/networth-project.png";
+import slackImg from "../assets/slack-project.png";
 
 function Projects() {
   return (
