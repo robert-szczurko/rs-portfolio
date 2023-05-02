@@ -83,6 +83,16 @@ function Navbar(props) {
             duration={500}>
             Contact
           </Link>
+          <Link
+            className="nav-item"
+            activeClass="nav-active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}>
+            add resume
+          </Link>
         </div>
         <div className="hamburger" onClick={props.hamburgerClick}>
           {iconImg}

@@ -11,13 +11,13 @@ function Header() {
     <div id="home">
       <div className="container header-container">
         <div className="header-left">
-          <h3 className="sub-heading">Hello, </h3>
+          <h3 className="section-heading">Hello, </h3>
           <h3 className="heading">
-            <span className="heading-white">I'm </span>
+            <span className="white-span">I'm </span>
             <TypeWriter typing={1}>Robert Szczurko</TypeWriter>
           </h3>
 
-          <h3 className="sub-heading">Front-end Developer</h3>
+          <h3 className="section-heading">Front-end Developer</h3>
           <p className="body-text">
             I am a React front-end developer based in Melbourne, Australia
           </p>
