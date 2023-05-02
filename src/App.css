@@ -10,12 +10,13 @@ body {
 
 .container {
   display: flex;
-  width: 80%;
-  max-width: 1400px;
+  align-items: center;
+  width: 100%;
+  padding: 0 30px;
 }
 
 .heading {
-  font-size: 60px;
+  font-size: 30px;
   color: #00b18a;
   font-weight: 600;
 }
@@ -25,11 +26,12 @@ body {
 }
 
 .sub-heading {
-  font-size: 30px;
+  font-size: 18px;
   font-weight: 500;
 }
 
 .body-text {
+  font-size: 14px;
   font-weight: 500;
   color: #8b9198;
 }
@@ -39,12 +41,16 @@ body {
   color: white;
   width: fit-content;
   font-size: 14px;
-  padding: 15px;
+  padding: 12px 15px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s;
   border: none;
   border-radius: 8px;
+}
+
+.button-primary:hover {
+  background-color: #26f1c4;
 }
 
 .button-secondary {
@@ -53,13 +59,34 @@ body {
   background: none;
   width: fit-content;
   font-size: 14px;
-  padding: 15px;
+  padding: 12px 15px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s;
   border-radius: 8px;
 }
 
+.button-secondary:hover {
+  border: 2px solid #26f1c4;
+  color: #26f1c4;
+}
+
 .btn-spacer {
   margin: 0 15px;
+}
+
+@media screen and (min-width: 860px) {
+  .container {
+    width: 80%;
+    max-width: 1300px;
+  }
+  .heading {
+    font-size: 60px;
+  }
+  .sub-heading {
+    font-size: 30px;
+  }
+  .body-text {
+    font-size: 16px;
+  }
 }

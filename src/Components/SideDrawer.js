@@ -13,6 +13,17 @@ function SideDrawer(props) {
       <Link
         className="mobile-nav-item"
         activeClass="nav-active"
+        to="home"
+        spy={true}
+        smooth={true}
+        offset={-80}
+        duration={500}
+        onClick={props.linkClick}>
+        Home
+      </Link>
+      <Link
+        className="mobile-nav-item"
+        activeClass="nav-active"
         to="about"
         spy={true}
         smooth={true}

@@ -3,11 +3,13 @@ import "../css/Header.css";
 import TypeWriter from "react-typewriter";
 import { Link } from "react-scroll";
 import ProfileImg from "../assets/profile-hex.png";
+import GitHub from "@material-ui/icons/GitHub";
+import LinkedIn from "@material-ui/icons/LinkedIn";
 
 function Header() {
   return (
     <div id="home">
-      <div className="container">
+      <div className="container header-container">
         <div className="header-left">
           <h3 className="sub-heading">Hello, </h3>
           <h3 className="heading">
@@ -39,7 +41,20 @@ function Header() {
               </button>
             </Link>
           </div>
-          <div className="socials"></div>
+          <div className="socials">
+            <a
+              href="https://github.com/robert-szczurko"
+              target="_blank"
+              className="social-icon">
+              <GitHub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/robert-szczurko-4ab313232/"
+              target="_blank"
+              className="social-icon">
+              <LinkedIn />
+            </a>
+          </div>
         </div>
         <div className="header-right">
           <img src={ProfileImg} alt="" className="profile-img" />

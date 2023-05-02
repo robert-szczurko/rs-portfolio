@@ -3,6 +3,7 @@ import "../css/Navbar.css";
 import { Link } from "react-scroll";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
+import RSLogo from "../assets/RSlogo-icon.svg";
 
 function Navbar(props) {
   const [navbar, setNavbar] = useState(false);
@@ -35,9 +36,10 @@ function Navbar(props) {
             offset={-80}
             duration={500}
             onClick={props.logoclick}>
-            <h3>
-              Robert <span>S</span>
-            </h3>
+            <div className="nav-logo">
+              <img src={RSLogo} alt="" className="nav-logo-img" />
+              <h3 className="nav-logo-text">Portfolio</h3>
+            </div>
           </Link>
         </div>
         <div className="navbar-links">

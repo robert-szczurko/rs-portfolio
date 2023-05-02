@@ -1,5 +1,5 @@
 .navbar {
-  background-color: transparent;
+  background: #161415;
   height: 80px;
   display: flex;
   justify-content: space-around;
@@ -13,33 +13,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .nav-logo {
-  height: 50px;
-  width: 80px;
-  background-image: url(../assets/RSlogo.png);
-  background-size: cover;
-  transition: all 0.2s;
-}
-.nav-active > .nav-logo {
-  background-image: url(../assets/RSlogo-active.png);
+  display: flex;
+  align-items: center;
 }
 
-.nav-logo:hover {
-  background-image: url(../assets/RSlogo-hover.png);
+.nav-logo-img {
+  color: #00b18a;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.nav-logo-text {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1.3px;
 }
 
 .navbar-links {
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.navbar-scrolled {
-  background-color: #11161c;
+  display: none;
 }
 
 .nav-item {
@@ -62,21 +57,23 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 960px) {
-  .navbar-links {
+@media screen and (min-width: 860px) {
+  .hamburger {
     display: none;
   }
+  .navbar-links {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
   .navbar {
-    background: #161415;
+    background-color: transparent;
   }
   .navbar-container {
     width: 100%;
-    padding: 0 60px;
   }
-}
-
-@media screen and (min-width: 960px) {
-  .hamburger {
-    display: none;
+  .navbar-scrolled {
+    background-color: #11161c;
   }
 }

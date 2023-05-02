@@ -3,43 +3,69 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -80px;
   color: white;
+  margin-top: -30px;
+}
+
+.header-container {
+  flex-direction: column;
 }
 
 .header-left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 60%;
 }
 
 .header-right {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
   position: relative;
+  width: 80%;
+}
+
+.header-btns {
+  margin-top: 20px;
 }
 
 .profile-img {
   height: auto;
   width: 100%;
-  margin-top: -50px;
 }
 
-.header-btn:hover {
-  background-color: #f06000;
+.socials {
+  display: flex;
+  margin-top: 30px;
 }
 
-@media screen and (max-width: 680px) {
-  .header-heading {
-    font-size: 40px;
+.social-icon {
+  text-decoration: none;
+  background-color: #00b18a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 10px 7px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin: 0 10px;
+}
+
+@media screen and (min-width: 860px) {
+  #home {
+    margin-top: -80px;
   }
-  .header-greeting {
-    font-size: 16px;
+  .header-container {
+    flex-direction: row;
   }
-  .header-text {
-    font-size: 16px;
+  .header-left {
+    width: 60%;
+  }
+  .header-right {
+    width: 40%;
+  }
+  .profile-img {
+    margin-top: -50px;
   }
 }
